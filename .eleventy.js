@@ -8,4 +8,9 @@ module.exports = config => {
   config.addCollection("projects", collection => {
     return collection.getFilteredByGlob("projects/*.md");
   });
+  return {
+    dir: {
+      output: "docs"
+    }
+  }
 };
