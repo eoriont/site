@@ -1,0 +1,16 @@
+---
+layout: default.pug
+pagetitle: Blog
+title: Blog
+subtitle: Read my blog posts!
+---
+-function truncate(str) {
+  -return str.substring(0, 200) + "...";
+-}
+.cards
+  each post in collections.posts
+    a(href=post.url).card
+      .cardheader
+        h2= post.data.title + ", " + new Date(post.date).toDateString()
+      .cardbody
+        p= truncate(post.template.frontMatter.content)

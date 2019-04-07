@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  background-color: #dfe3f1;
+  font-family: 'PT Mono', monospace;
+}
+.nav {
+  background-color: #45b69c;
+}
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 16px 30px;
+  text-decoration: none;
+}
+li:hover:not(.active) {
+  background-color: #338572;
+}
+.navright {
+  float: right;
+}
+li.active {
+  background-color: #63CCCA;
+}
+.content {
+  padding-top: 16px;
+}
+.container {
+  margin: 0 auto;
+  width: 60%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 64px;
+}
+
+.nav li.icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .nav li:not(:first-child) {
+    display: none;
+  }
+  .nav li.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .nav.responsive {
+    position: relative;
+  }
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.pageheader {
+  text-align: center;
+  width: 100%;
+  background-color: #338572;
+  padding: 50px 0;
+  margin: 0;
+}
+.title {
+  margin: 0;
+  padding: 20px;
+  font-size: 4em;
+  color: white;
+}
+.subtitle {
+  margin: 0;
+  padding: 20px;
+  font-size: 3em;
+  color: lightgray;
+}
+
+.cards {
+  display: flex;
+  order: 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+.card {
+  background-color: #C5C9DA;
+  width: 100%;
+  margin: 20px 0px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+  .card {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+.cardheader {
+  background-color: #141516;
+  color: white;
+  width: 100%;
+}
+
+h2 {
+  margin: 0px;
+  padding: 10px;
+}
+
+.cardbody {
+  color: black;
+  position: relative;
+}
+
+.cardbody p {
+  height: 3.6em;
+  overflow: hidden;
+}
+
+p {
+  margin: 0px;
+  font-size: 16pt;
+}

@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    title oriont - 
+      = pagetitle
+    style
+      include ./style.css
+    script
+      include ./nav.js
+  body
+    .pageheader
+      h2.title #{title}
+      h5.subtitle #{subtitle}
+    .nav#navbar
+      .container
+        ul.nav#nav
+          li.active
+            a(href="/") Home
+          li
+            a(href="/blog/") Blog
+          li
+            a(href="/projects/") Projects
+          li
+            a(href="/tutorials/") Tutorials
+          li.navright
+            a(href="/about/") About
+          li.icon
+            a#responsivebutton(href="javascript:void(0);")
+              i.fa.fa-bars
+    .container.content
+      != content

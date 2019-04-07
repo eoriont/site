@@ -1,0 +1,16 @@
+---
+layout: default.pug
+pagetitle: Projects
+title: Projects
+subtitle: All of my projects
+---
+-function truncate(str) {
+  -return str.substring(0, 200) + "...";
+-}
+.cards
+  each post in collections.projects
+    a(href=post.url).card
+      .cardheader
+        h2= post.data.title
+      .cardbody
+        p= truncate(post.template.frontMatter.content)
