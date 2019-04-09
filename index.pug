@@ -7,6 +7,21 @@ subtitle: Blogs, Projects, Tutorials, and more.
 
 h1 Welcome to oriont.net
 
-p In my website I post the things I do on the computer.
+p Here, I will post the things I do on the computer.
 br
-p There will be more coming soon, I just wanted to get this update up.
+h1 Latest Blog Post:
+-function truncate(str) {
+  -return str.substring(0, 200) + "...";
+-}
+.cards 
+  - var post = collections.posts[0]
+  a(href=post.url).card
+    .cardheader
+      h2= post.data.title + ", " + new Date(post.date).toDateString()
+    .cardbody
+      p= truncate(post.template.frontMatter.content)
+
+p I don't have any projects or tutorials posted yet, but I will soon.
+p Check out my 
+  a(href='/about') About Page
+  span  to learn more about me.
