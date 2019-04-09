@@ -1,0 +1,24 @@
+{
+  "name": "eoriont.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eoriont/eoriont.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eoriont/eoriont.github.io/issues"
+  },
+  "homepage": "https://github.com/eoriont/eoriont.github.io#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.8.1",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
